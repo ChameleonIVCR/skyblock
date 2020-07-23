@@ -11,7 +11,7 @@ public class WorldChangeHandler implements Listener {
 	public void onPlayerChangedWorld(PlayerChangedWorldEvent event) {
 		if (event.getPlayer().getWorld() == Main.sbworld) {
 			Main.sbworld.strikeLightningEffect(event.getPlayer().getLocation());
-			event.getPlayer().getInventory().clear();
+			//event.getPlayer().getInventory().clear();
 		}
 	}
 }

@@ -12,7 +12,7 @@ import com.gekkedev.skyblock.commands.SBCommand;
 import com.gekkedev.skyblock.handlers.AutoSaver;
 import com.gekkedev.skyblock.handlers.ChatModifier;
 import com.gekkedev.skyblock.handlers.ItemDropper;
-import com.gekkedev.skyblock.handlers.MotdModifier;
+//import com.gekkedev.skyblock.handlers.MotdModifier;
 import com.gekkedev.skyblock.handlers.WorldChangeHandler;
 
 /**
@@ -36,7 +36,7 @@ public class Main extends JavaPlugin
         sbworld = creator.createWorld();
 
         //register events
-        getServer().getPluginManager().registerEvents(new MotdModifier(), this);
+        //getServer().getPluginManager().registerEvents(new MotdModifier(), this);
         getServer().getPluginManager().registerEvents(new ChatModifier(), this);
         getServer().getPluginManager().registerEvents(new AutoSaver(), this);
         getServer().getPluginManager().registerEvents(new ItemDropper(), this);
